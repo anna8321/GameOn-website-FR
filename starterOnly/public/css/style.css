@@ -99,7 +99,7 @@ img {
     display: block;
     margin-top: -15px;
   }
-} 
+}
 
 main {
   font-size: 130%;
@@ -183,9 +183,13 @@ main {
   padding-top: 10px;
 }
 
-.modal-body {
+.modal-body, .modal-confirmation {
   padding: 15px 8%;
   margin: 15px auto;
+}
+
+.modal-confirmation {
+  display: none;
 }
 
 label {
@@ -226,7 +230,7 @@ input {
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
 }
-/* 
+/*
 input[data-error]::after {
     content: attr(data-error);
     font-size: 0.4em;
@@ -526,4 +530,3 @@ footer {
     opacity: 1;
   }
 }
-
