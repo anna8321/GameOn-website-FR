@@ -80,37 +80,56 @@
               <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" required>
             </div>
             <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
-            <div class="formData">
-              <input class="checkbox-input" type="radio" id="location1" name="location" value="New York" required oninvalid="setCustomValidity('Vous devez choisir une option. ')" onchange="try{setCustomValidity('')}catch(e){}"/>
+            <div class="formData radio">
+              <input class="checkbox-input-radio" type="radio" id="location1" name="location" value="New York" required
+                oninvalid="setCustomValidity('Vous devez choisir une option. ')"
+                onchange="try{setCustomValidity('')}catch(e){}" />
               <label class="checkbox-label" for="location1">
-                New York</label>
-              <input class="checkbox-input" type="radio" id="location2" name="location" value="San Francisco"/>
+                <div></div>
+              </label>
+              <p>New York</p>
+
+              <input class="checkbox-input-radio" type="radio" id="location2" name="location" value="San Francisco" />
               <label class="checkbox-label" for="location2">
-                San Francisco</label>
-              <input class="checkbox-input" type="radio" id="location3" name="location" value="Seattle"/>
+                <div></div>
+              </label>
+              <p>San Francisco</p>
+              <input class="checkbox-input-radio" type="radio" id="location3" name="location" value="Seattle" />
               <label class="checkbox-label" for="location3">
-                Seattle</label>
-              <input class="checkbox-input" type="radio" id="location4" name="location" value="Chicago"/>
+                <div></div>
+              </label>
+              <p>Seattle</p>
+              <input class="checkbox-input-radio" type="radio" id="location4" name="location" value="Chicago" />
               <label class="checkbox-label" for="location4">
-                Chicago</label>
-              <input class="checkbox-input" type="radio" id="location5" name="location" value="Boston" />
+                <div></div>
+              </label>
+              <p>Chicago</p>
+              <input class="checkbox-input-radio" type="radio" id="location5" name="location" value="Boston" />
               <label class="checkbox-label" for="location5">
-                Boston</label>
-              <input class="checkbox-input" type="radio" id="location6" name="location" value="Portland" />
+                <div></div>
+              </label>
+              <p>Boston</p>
+              <input class="checkbox-input-radio" type="radio" id="location6" name="location" value="Portland" />
               <label class="checkbox-label" for="location6">
-                Portland</label>
+                <div></div>
+              </label>
+              <p>Portland</p>
             </div>
 
-            <div class="formData">
-              <input class="checkbox-input" type="checkbox" id="checkbox1" name="checkbox1" value="terms" checked required oninvalid="setCustomValidity('Vous devez vérifier que vous acceptez les termes et conditions. ')" onchange="try{setCustomValidity('')}catch(e){}"/>
+            <div class="formData checkbox">
+              <input class="checkbox-input" type="checkbox" id="checkbox1" name="checkbox1" value="terms" checked
+                required
+                oninvalid="setCustomValidity('Vous devez vérifier que vous acceptez les termes et conditions. ')"
+                onchange="try{setCustomValidity('')}catch(e){}" />
               <label class="checkbox2-label" for="checkbox1">
-                J'ai lu et accepté les conditions d'utilisation.
+                <div class="cross"></div>
               </label>
-              <br>
+              <p>J'ai lu et accepté les conditions d'utilisation.</p>
               <input class="checkbox-input" type="checkbox" id="checkbox2" />
               <label class="checkbox2-label" for="checkbox2">
-                Je souhaite être prévenu des prochains évènements.
+                <div class="cross"></div>
               </label>
+              <p>Je souhaite être prévenu des prochains évènements.</p>
               <br>
             </div>
             <input class="btn-submit button" type="submit" value="C'est parti" />
