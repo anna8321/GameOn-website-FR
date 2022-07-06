@@ -437,6 +437,11 @@ input[data-error]::after {
   transition: 0.3s;
 } */
 
+.error {
+  color: #D8000C;
+  font-size: 13px;
+}
+
 .close {
   position: absolute;
   right: 15px;

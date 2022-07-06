@@ -54,36 +54,41 @@
       <div class="content">
         <span class="close closeModal"></span>
         <div class="modal-body">
-          <form class="form-modal" name="reserve" action="index.html" method="get" onsubmit="return validate();">
+
+          <form class="form-modal" id="reserve" name="reserve" action="index.html" method="get"
+            onsubmit="return validate();">
             <div class="formData">
               <label for="first">Prénom</label><br>
-              <input class="text-control" type="text" id="first" name="first" minlength="2" required /><br>
+              <input class="text-control" type="text" id="first" name="first" minlength="2" />
+              <span class="error" id="errorfirst"></span>
+              <br>
             </div>
             <div class="formData">
               <label for="last">Nom</label><br>
-              <input class="text-control" type="text" id="last" name="last" minlength="2" required
-                oninvalid="setCustomValidity('Veuillez entrer 2 caractères ou plus pour le champ du nom. ')"
-                onchange="try{setCustomValidity('')}catch(e){}" /><br>
+              <input class="text-control" type="text" id="last" name="last" minlength="2" />
+              <span class="error" id="errorlast"></span>
+              <br>
             </div>
             <div class="formData">
               <label for="email">E-mail</label><br>
-              <input class="text-control" type="email" id="email" name="email" required /><br>
+              <input class="text-control" type="email" id="email" name="email" />
+              <span class="error" id="erroremail"></span><br>
             </div>
             <div class="formData">
               <label for="birthdate">Date de naissance</label><br>
-              <input class="text-control" type="date" id="birthdate" name="birthdate" required
-                oninvalid="setCustomValidity('Vous devez entrer votre date de naissance. ')"
-                onchange="try{setCustomValidity('')}catch(e){}" /><br>
+              <input class="text-control" type="date" id="birthdate" name="birthdate" />
+              <span class="error" id="errorbirthdate"></span><br>
             </div>
             <div class="formData">
-              <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
-              <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" required>
+              <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label>
+              <span class="error" id="errorquantity"></span>
+              <br>
+              <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99" required >
             </div>
             <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
             <div class="formData radio">
-              <input class="checkbox-input-radio" type="radio" id="location1" name="location" value="New York" required
-                oninvalid="setCustomValidity('Vous devez choisir une option. ')"
-                onchange="try{setCustomValidity('')}catch(e){}" />
+              <span class="error" id="errorlocation"></span><br>
+              <input class="checkbox-input-radio" type="radio" id="location1" name="location" value="New York"/>
               <label class="checkbox-label" for="location1">
                 <div></div>
               </label>
@@ -117,14 +122,14 @@
             </div>
 
             <div class="formData checkbox">
-              <input class="checkbox-input" type="checkbox" id="checkbox1" name="checkbox1" value="terms" checked
-                required
-                oninvalid="setCustomValidity('Vous devez vérifier que vous acceptez les termes et conditions. ')"
-                onchange="try{setCustomValidity('')}catch(e){}" />
+              <input class="checkbox-input" type="checkbox" id="checkbox1" name="checkbox1" value="terms" checked />
               <label class="checkbox2-label" for="checkbox1">
                 <div class="cross"></div>
               </label>
+              <br>
               <p>J'ai lu et accepté les conditions d'utilisation.</p>
+              <span class="error" id="errorcheckbox1"></span>
+              <br>
               <input class="checkbox-input" type="checkbox" id="checkbox2" />
               <label class="checkbox2-label" for="checkbox2">
                 <div class="cross"></div>
