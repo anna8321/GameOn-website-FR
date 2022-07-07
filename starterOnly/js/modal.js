@@ -28,6 +28,7 @@ function launchModal() {
 }
 // close modal form
 function closeModal() {
+  e.preventDefault();
   modalbg.style.display = "none";
 }
 
