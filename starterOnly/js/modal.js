@@ -12,7 +12,7 @@ const modalbg = document.querySelector(".bground");
 const modalBtn = document.querySelectorAll(".modal-btn");
 const formData = document.querySelectorAll(".formData");
 const closeModalBtn = document.querySelectorAll(".closeModal");
-const modalBody = document.querySelector(".form-modal");
+const modalBody = document.querySelector(".modal-body");
 const modalConfirmation = document.querySelector(".modal-confirmation");
 
 
@@ -98,7 +98,7 @@ function validate() {
     document.getElementById('errorquantity').innerHTML = "";
     document.getElementById('errorlocation').innerHTML = "";
     modalBody.style.display = "none";
-    modalConfirmation.style.display = "block";
+    modalConfirmation.style.display = "flex";
   }
 }
 
