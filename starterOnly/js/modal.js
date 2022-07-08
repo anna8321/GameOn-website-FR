@@ -28,7 +28,6 @@ function launchModal() {
 }
 // close modal form
 function closeModal() {
-  e.preventDefault();
   modalbg.style.display = "none";
 }
 
@@ -91,13 +90,7 @@ function validate() {
     document.getElementById('errorcheckbox1').innerHTML = "Vous devez vérifier que vous acceptez les termes et conditions.";
     return false;
   } else {
-    document.getElementById('errorfirst').innerHTML = "";
-    document.getElementById('errorlast').innerHTML = "";
-    document.getElementById('erroremail').innerHTML = "";
-    document.getElementById('errorbirthdate').innerHTML = "";
-    document.getElementById('errorquantity').innerHTML = "";
-    document.getElementById('errorquantity').innerHTML = "";
-    document.getElementById('errorlocation').innerHTML = "";
+    // document.getElementById('errorfirst').innerHTML = "";
     modalBody.style.display = "none";
     modalConfirmation.style.display = "flex";
   }
