@@ -152,8 +152,9 @@ img {
 }
 
 .formData .text-label {
-  font-size:  16px;
+  font-size: 16px;
 }
+
 label {
   font-family: var(--font-default);
   font-size: 16px;
@@ -772,9 +773,9 @@ footer {
     font-size: 14px;
   }
 
-    .formData .text-label {
-      font-size: 14px;
-    }
+  .formData .text-label {
+    font-size: 14px;
+  }
 
   .radio {
     width: 95%;
