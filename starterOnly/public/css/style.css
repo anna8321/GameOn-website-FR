@@ -247,13 +247,21 @@ input[type="radio"]:focus {
 
 /* re thinking checkbox button */
 
+
+
 .checkbox {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   width: 90%;
   flex-wrap: wrap;
   margin-top: 10px;
   margin-bottom: 15px;
+}
+
+.checkbox-terms, .checkbox-events {
+  display: flex;
+  align-items: center;
+
 }
 
 .checkbox p {
@@ -320,6 +328,7 @@ input[type="radio"]:focus {
 .error {
   color: #D8000C;
   font-size: 13px;
+  padding-right: 10px;
 }
 
 
@@ -754,6 +763,7 @@ footer {
 
   .content {
     margin: 0 auto;
+    top: 79px;
   }
 
   .modal-body {
