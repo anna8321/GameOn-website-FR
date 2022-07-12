@@ -55,11 +55,25 @@ function validate() {
     return false;
   }
 
+  else if (first.value.length <= 1) {
+    document.getElementById('errorfirst').innerHTML = "Veuillez entrer 2 caractères ou plus pour le champ du prénom.";
+    first.focus();
+    first.style.border = "2px solid #ff0000";
+    return false;    
+  }
+
   if (last.value == "") {
     document.getElementById('errorlast').innerHTML = "Veuillez entrer 2 caractères ou plus pour le champ du nom.";
     last.focus();
     last.style.border = "2px solid #ff0000";
     return false;
+  }
+
+  else if (last.value.length <= 1) {
+    document.getElementById('errorlast').innerHTML = "Veuillez entrer 2 caractères ou plus pour le champ du nom.";
+    last.focus();
+    last.style.border = "2px solid #ff0000";
+    return false;    
   }
 
   if (email.value == "") {
@@ -89,6 +103,7 @@ function validate() {
   if (document.getElementById("checkbox1").checked == false) {
     document.getElementById('errorcheckbox1').innerHTML = "Vous devez vérifier que vous acceptez les termes et conditions.";
     return false;
+
   } else {
     // document.getElementById('errorfirst').innerHTML = "";
     modalBody.style.display = "none";
