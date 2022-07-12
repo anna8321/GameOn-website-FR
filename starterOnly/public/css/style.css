@@ -333,7 +333,6 @@ input[type="radio"]:focus {
 .error {
   color: #D8000C;
   font-size: 13px;
-  padding-right: 10px;
 }
 
 
@@ -618,7 +617,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
-    position: sticky;
+    /* position: sticky; */
     top: 10px;
     width: 90%;
   }
@@ -676,7 +675,7 @@ footer {
 
   .topnav .main-navbar {
     position: absolute;
-    right: 6px;
+    right: 31px;
     float: none;
     border-radius: 15px;
   }
@@ -690,8 +689,8 @@ footer {
   .topnav.responsive .main-navbar {
     opacity: 1;
     background-color: #000;
-    top: -7px;
-    right: 0;
+    top: 20px;
+    right: 4.1%;
   }
 
   main {

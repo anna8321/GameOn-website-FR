@@ -64,7 +64,7 @@ function validate() {
 
   if (email.value == "") {
     document.getElementById('erroremail').innerHTML = "Veuillez saisir votre email.";
-    last.focus();
+    email.focus();
     email.style.border = "2px solid #ff0000";
     return false;
   }
