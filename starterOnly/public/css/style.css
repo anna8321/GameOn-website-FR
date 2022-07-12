@@ -222,6 +222,7 @@ input[type="radio"] {
   place-content: center;
 }
 
+/* adding pseudo element to radio button to make it appear later inside the initialize radio button */
 input[type="radio"]::before {
   content: "";
   width: 13px;
@@ -232,22 +233,22 @@ input[type="radio"]::before {
   box-shadow: inset 13px 13px #279e7a;
 }
 
+/* changing radio button border when it is activated */
 input[type="radio"]:checked {
   border: 1px solid #279e7a;
 }
 
+/* make radio button appear with small animation */
 input[type="radio"]:checked::before {
   transform: scale(1);
 }
 
+/* keep user focus on the clickable element */
 input[type="radio"]:focus {
-  /* outline: max(2px, 0.15em) solid #279e7a; */
   outline-offset: max(2px, 0.15em);
 }
 
 /* re thinking checkbox button */
-
-
 
 .checkbox {
   display: flex;
@@ -258,7 +259,8 @@ input[type="radio"]:focus {
   margin-bottom: 15px;
 }
 
-.checkbox-terms, .checkbox-events {
+.checkbox-terms,
+.checkbox-events {
   display: flex;
   align-items: center;
 
@@ -270,6 +272,7 @@ input[type="radio"]:focus {
   width: 94%;
 }
 
+/* initialize checkbox button style */
 .checkbox2-label {
   position: relative;
   height: 22px;
@@ -279,6 +282,7 @@ input[type="radio"]:focus {
   align-items: center;
 }
 
+/* create element cross and applying style to it */
 .checkbox2-label>.cross {
   border-radius: 4px;
   border: 0;
@@ -320,10 +324,11 @@ input[type="radio"]:focus {
   opacity: 0;
 }
 
-/* make cross child element appeared when checkbox input is activate */
+/* make cross child element appeared when checkbox input is activated */
 .checkbox-input:checked+.checkbox2-label>.cross::after {
   opacity: 1;
 }
+
 
 .error {
   color: #D8000C;
@@ -407,9 +412,6 @@ input[type="radio"]:focus {
   cursor: pointer;
   border: 0;
 }
-
-
-
 
 /* birdthdate calendar styles */
 
@@ -505,11 +507,6 @@ input[type="radio"]:focus {
   width: 44%;
 }
 
-/* .hero-content>* {
-  position: relative;
-  z-index: 1;
-} */
-
 .hero-headline {
   font-size: 6rem;
   font-weight: normal;
@@ -522,7 +519,6 @@ input[type="radio"]:focus {
   margin-top: 57px;
   padding: 0;
   padding-right: 55px;
-
 }
 
 .btn-signup {
@@ -546,6 +542,10 @@ input[type="radio"]:focus {
   object-fit: cover;
 }
 
+.signup-mobile {
+  display: none;
+}
+
 .copyrights {
   color: #fe142f;
   padding: 0;
@@ -554,23 +554,20 @@ input[type="radio"]:focus {
   font-weight: bolder;
 }
 
-.signup-mobile {
-  display: none;
-}
-
 footer {
   padding-left: 2vw;
   padding-right: 2vw;
   margin: 0 10px;
 }
 
+/* tablet part */
 @media screen and (max-width: 992px) {
   .topnav a {
     font-size: 16px;
     margin: 5px 0;
   }
 
-  .banner .banner-content {
+  .hero-section .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -612,9 +609,9 @@ footer {
     margin: 20px 0px;
     text-align: center;
   }
-
 }
 
+/* mobile part*/
 @media screen and (max-width: 768px) {
   .topnav {
     display: flex;
@@ -624,7 +621,6 @@ footer {
     position: sticky;
     top: 10px;
     width: 90%;
-    /* z-index: 2; */
   }
 
   .topnav a {
@@ -710,13 +706,13 @@ footer {
     padding: 0;
   }
 
-  .banner .hero-headline {
+  .hero-section .hero-headline {
     font-size: 40px;
     margin-bottom: 15px;
     line-height: 3.6rem;
   }
 
-  .banner .banner-content {
+  .hero-section .hero-content {
     background: #fff;
     color: #000;
     padding: 15px 0px;
@@ -725,17 +721,17 @@ footer {
     position: static;
   }
 
-  .banner-content .hero-text {
+  .hero-content .hero-text {
     width: unset;
     font-size: 13px;
     padding-bottom: 18px;
   }
 
-  .banner .banner-content::after {
+  .hero-section .hero-content::after {
     content: unset;
   }
 
-  .banner .hero-img {
+  .hero-section .hero-img {
     width: 100%;
     height: 100%;
   }
@@ -874,6 +870,7 @@ footer {
   }
 
 }
+
 
 @keyframes modalopen {
   from {

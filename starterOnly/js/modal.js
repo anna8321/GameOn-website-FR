@@ -96,6 +96,10 @@ function validate() {
   }
 }
 
+
+/* others method testing */
+
+
 // document.getElementById("reserve").addEventListener("submit", function(e) {
 //   let error;
 //   let last = document.getElementById("last");
