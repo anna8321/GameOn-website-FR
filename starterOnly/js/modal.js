@@ -59,7 +59,7 @@ function validate() {
     document.getElementById('errorfirst').innerHTML = "Veuillez entrer 2 caractères ou plus pour le champ du prénom.";
     first.focus();
     first.style.border = "2px solid #ff0000";
-    return false;    
+    return false;
   }
 
   if (last.value == "") {
@@ -73,7 +73,7 @@ function validate() {
     document.getElementById('errorlast').innerHTML = "Veuillez entrer 2 caractères ou plus pour le champ du nom.";
     last.focus();
     last.style.border = "2px solid #ff0000";
-    return false;    
+    return false;
   }
 
   if (email.value == "") {
