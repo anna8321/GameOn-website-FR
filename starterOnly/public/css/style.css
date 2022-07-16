@@ -267,6 +267,7 @@ input[type="radio"]:focus {
   display: flex;
   align-items: center;
 }
+
 .checkbox2 {
   position: relative;
   height: 22px;
